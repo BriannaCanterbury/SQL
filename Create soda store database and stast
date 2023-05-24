@@ -1,0 +1,29 @@
+CREATE TABLE sodas (id INTEGER PRIMARY KEY, name TEXT, brand TEXT, quanity INTEGER, price INTEGER);
+
+INSERT INTO sodas VALUES (1, "mtw dew", "PepsiCo", 20, 3);
+INSERT INTO sodas VALUES (2, "diet mtw dew", "PepsiCo", 15, 2);
+INSERT INTO sodas VALUES (3, "pepsi", "PepsiCo", 25, 6);
+INSERT INTO sodas VALUES (4, "diet pepsi", "PepsiCo", 20, 2);
+INSERT INTO sodas VALUES (5, "dr.pepper", "PepsiCo", 25, 7);
+INSERT INTO sodas VALUES (6, "diet dr.pepper", "PepsiCo", 20, 4);
+INSERT INTO sodas VALUES (7, "root beer", "PepsiCo", 20, 5);
+INSERT INTO sodas VALUES (8, "diet root beer", "PepsiCo", 15, 2);
+INSERT INTO sodas VALUES (9, "ginger ale", "PepsiCo", 20, 6);
+INSERT INTO sodas VALUES (10, "pepsi wild cherry", "PepsiCo", 30, 7);
+INSERT INTO sodas VALUES (11, "diet pepsi wild cherry", "PepsiCo", 15, 5);
+INSERT INTO sodas VALUES (12, "caffine free pepsi", "PepsiCo", 15, 3);
+INSERT INTO sodas VALUES (13, "caffine free diet pepsi", "PepsiCo", 20, 2);
+INSERT INTO sodas VALUES (14, "pepsi premix", "PepsiCo", 25, 25);
+INSERT INTO sodas VALUES (15, "mtw dew premix", "PepsiCo", 25, 20);
+
+
+
+SELECT SUM(price) FROM sodas;
+SELECT * FROM sodas ORDER BY price;
+SELECT SUM(price) FROM sodas;
+SELECT * FROM sodas WHERE price < 5 ORDER BY quanity;
+
+
+
+
+
